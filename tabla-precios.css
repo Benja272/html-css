@@ -3,15 +3,18 @@
 
 */
 .container{
-    display: flex;
-    flex-wrap: wrap;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-
+    width: 90%;
+    margin: auto 20px;
 }
 .text-center{
     text-align: center;
+    flex-wrap: wrap;
+}
+.flex{
+    display: flex;
 }
 .columna{
     background: rgb(228,228,288);
@@ -25,6 +28,7 @@
     El tercer valor es el degradado*/
     box-shadow: 10px 10px 5px rgb(138, 111, 111);
     width: 24%;
+    /* agrega el padding y el borde al calculo del porcentaje indicado para la columna */
     box-sizing: border-box;
 }
 .precio{
@@ -41,4 +45,16 @@
 }
 .btn-precio:hover{
     background: red;
+}
+@media (max-width: 1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 600px){
+    .columna{
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
