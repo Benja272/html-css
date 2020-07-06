@@ -1,0 +1,44 @@
+/* google.fonts Para ver tipografias  
+    box-shadow = https://developer.mozilla.org/es/docs/Web/CSS/box-shadow
+
+*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+
+}
+.text-center{
+    text-align: center;
+}
+.columna{
+    background: rgb(228,228,288);
+    color: #333;
+    border: 1px solid #333;
+    margin: 0 auto;
+    padding: 10px;  
+    /* Borde redondeado de los margenes ,mientras mas grande el numero mas se nota la pronunciacion */
+    border-radius: 5px;
+    /* Primer valor en positivo,sombra a la derecha ,segundo valor en positivo,sombra abajo y contrariamente en negativo. 
+    El tercer valor es el degradado*/
+    box-shadow: 10px 10px 5px rgb(138, 111, 111);
+    width: 24%;
+    box-sizing: border-box;
+}
+.precio{
+    font-size: 50px;
+    color: aqua;
+}
+.btn-precio{
+    display: block;
+    background: salmon;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+.btn-precio:hover{
+    background: red;
+}

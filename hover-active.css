@@ -1,0 +1,13 @@
+button{
+    background: #383e56;
+    color: turquoise;
+    padding: 10px;
+}
+/* Cambia a hover cuando el mousse esta sobre el boton */
+button:hover{
+    background: violet;
+}
+
+button:active{
+    background: royalblue;
+}

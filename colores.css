@@ -1,0 +1,12 @@
+/* Color con escritura simple */
+.color{
+    color: green;
+}
+/* Color en formato rgb */
+.violeta{
+    color: rgb(197, 92, 138);
+}
+/* Color en formato hexadecimal */
+.celeste{
+    color: #00CED1;
+}

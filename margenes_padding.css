@@ -1,0 +1,18 @@
+/*  MARGEN = EXTERNO
+    PADDING = INTERNO */ 
+
+h1{
+    background: #ec610e;
+/*     margin-left: 100px;
+    margin-bottom: 200px; */
+    /* Aplica margenes generales  */
+    /* margin: 100px; */
+    /* El primer valor es arriba-abajo y el segundo izq-der  */
+    /* margin: 200px 100px; */
+     /* Arriba Derecha Abajo Isquierda  */
+    margin: 100px 20px 200px 100px;
+}
+p{
+    background: green;
+    padding: 100px;
+}
