@@ -1,0 +1,53 @@
+.contenedor{
+    background: orangered;
+    width: 80%;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    /* Indica la direccion de lectura de los elementos */
+    /* flex-direction: row-reverse;
+    Da vuelta la pagina  */
+    /* flex-direction: column; */
+    /* Pone los elementos por columna */
+    /* flex-wrap: wrap; */
+    /* Acomoda los elementos automaticamente permitiendo agregar columnas  */
+    /* justify-content: center; */
+    /* justifica los elementos al medio */
+    /* justify-content: space-around; */
+    /* Crea espacios entre el margen de la pag y tambien entre los elementos */
+    /* align-items: flex-end; */
+    /* manda al final de la pagina o donde vos quieras los elementos verticalmente */
+    /* align-items: stretch; 
+    Permite que los elementos hijos ocupen el 100% de la altura
+    */
+    /* align-content: flex-end; */
+    /* Funciona cuando existen 2 lineas de elementos y en este caso libera espacio de la pagina al inicio. */
+}
+.hijo{
+    background: #00B285;
+    width: 200px;
+    height: 50px;
+    margin: 30px;
+    color: #fff;
+    padding: 20px;
+    /* Tamaño del traso de la letra */
+    font-size: 40px;
+    text-align: center;
+    /* flex-grow: 1; */
+    /* Indica que los elementos ocupen el 100% del ancho de el  contenedor */
+    /* flex-shrink: 0; restringe el tamaño minimo */
+    flex: 1 1 auto;
+    /* El tamaño de los elementos crece proporcionalmente con los diferentes tamaños de pantalla (Crecimiento dinamico) */
+    order: 2;
+}
+.otro{
+    /* Indica la prioridad en el posicionamiento de los elementos siendo 1 el orden de mayor prioridad */
+    /* order: 1; */
+    /* Indica el posicionamiento particular de el elemento en la pagina */
+    align-self: flex-end;
+}
+@media(max-width: 800px){
+    .contenedor{
+        height: auto;
+    }
+}
